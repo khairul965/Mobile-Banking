@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>    
+        <meta charset="UTF-8" />   
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+            <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+            <title>Mobile Banking</title>
+
+</head>  
+    <body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center"> 
+
+        <div class="h-[130px] w-[300px]  bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+            <img src="assets/Group.png" alt="">
+
+        </div>
+
+            <form class="border-2 border-red 500 bg-white rounded-2xl p-5 w-[350px]" action="">
+                <div>
+                    <label class="font-semibold" for="">Mobile Number</label> <br>
+                    <input id="mobileNm" class="mt-2 rounded-3xl bg-[#f4f5f7] w-full p-2" type="text" placeholder="Enter Your Numer" class="input input-info" />
+                </div>
+                <div class="mt-5">
+                    <label class="font-semibold" for="">4 Digit PIN</label> <br>
+                    <input id="pinNm" class="mt-2 rounded-3xl bg-[#f4f5f7] w-full p-2" type="text" placeholder="Enter 4 Digit Pin" class="input input-info" />
+                </div>
+
+                <button id="logbtn" class="btn btn-active btn-primary mt-5 w-full rounded-3xl">Log in</button>
+             </form>
+
+
+             <script src="./script.js"></script>
+    </body>
+</html>
